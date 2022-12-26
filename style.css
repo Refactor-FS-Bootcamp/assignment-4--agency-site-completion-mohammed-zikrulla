@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+
+/* font-family: 'Poppins', sans-serif; */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(./images/wesley-tingey-_0sEjWfAK3Q-unsplash.jpg);
+    background-color: #cccc;
+    background-repeat: no-repeat;
+    height: auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins';
+}
+
+header {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: #b2840c61;
+    border-bottom: 5px solid #c0c0c0fc;
+}
+
+header img {
+    align-self: center;
+    height: 70px;
+    padding-left: 20px;
+    padding-right: 5px;
+}
+
+header h1 a {
+    font-weight: 200;
+    color: aliceblue;
+    text-decoration: none;
+    text-align: left;
+}
+
+header ul {
+    display: flex;
+    justify-content: space-between;
+    margin-left: auto;
+
+
+
+}
+
+.list {
+    list-style: none;
+
+}
+
+.list a {
+    color: aliceblue;
+    text-decoration: none;
+    margin-right: 15px;
+    justify-content: flex-start;
+
+}
+
+a:hover {
+    color: black;
+    font-weight: 400;
+}
+
+.theme {
+    text-align: center;
+}
+
+.theme img {
+    border-radius: 20px;
+    box-shadow: 14px 26px 108px -15px rgb(0 0 0);
+}
+
+.butt {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+
+}
+
+.homebutton {
+    padding: 20px;
+    background-color: rgb(61, 106, 83);
+    color: white;
+    font-size: 15px;
+    border-radius: 5px;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+button a {
+    text-decoration: none;
+    color: white;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.showcase {
+    display: flex;
+    margin: 15px;
+    padding: 30px;
+    background-color: rgb(192, 199, 177);
+    flex-direction: column;
+    justify-content: center;
+    width: 350px;
+    border-top: 5px solid #66976e;
+    box-shadow: 0px 17px 20px -11px rgb(167 180 179);
+    margin-bottom: 60px;
+}
+
+.showcase img {
+    width: 100px;
+    align-self: center;
+}
+
+footer {
+    text-align: center;
+    border-top: 5px solid white;
+    background-color: coral;
+    margin-bottom: 0px;
+    height: 80px;
+}
+
+.grid {
+    display: grid;
+    height: 100vh;
+
+    grid-template-columns: repeat(3 1fr);
+    grid-template-rows: repeat(4 1fr);
+    grid-gap: 1rem;
+    grid-template-areas: 'header header header'
+        'sidebar main main'
+        'sidebar content content2'
+        'sidebar content3 content4'
+        'footer footer footer'
+    ;
+    /* justify-items: center; */
+}
+
+.header {
+    background-color: teal;
+    grid-area: header;
+}
+
+.sidebar {
+    background-color: tomato;
+    grid-area: sidebar;
+}
+
+.main {
+    background-color: #66976e;
+    grid-area: main;
+}
+
+.content {
+    background-color: aquamarine;
+    grid-area: content;
+}
+
+.content2 {
+    background-color: rgb(192, 199, 177);
+    grid-area: content2;
+}
+
+.content3 {
+    background-color: antiquewhite;
+    grid-area: content3;
+}
+
+.content4 {
+    background-color: lavender;
+    grid-area: content4;
+}
+
+.footer {
+    background-color: cornflowerblue;
+    grid-area: footer;
+}
+
+@media only screen and (max-width: 550px) {
+    .grid {
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "header"
+            "sidebar"
+            "main"
+            "content"
+            "content2"
+            "content3"
+            "content4"
+            "footer";
+        grid-gap: 0.2rem;
+    }
+}
+
+.grid h1 {
+    text-align: center;
+    padding-top: 20px;
+}
+
+a {
+    text-decoration: none;
+    text-align: center;
+}
